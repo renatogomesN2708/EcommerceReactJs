@@ -1,0 +1,47 @@
+@use '../../Sass/_Variables.scss' as *;
+
+
+.search {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1096px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 10px;
+
+        color: rgba(0, 0, 0, 0.40);
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        border: 1px solid rgba(0, 0, 0, 0.60);
+        background: rgba(255, 255, 255, 0.10);
+
+        
+    }
+    input::placeholder {
+        padding-left: 4em;
+    }
+    .search__img {
+        position: absolute;
+        top: 30%;
+        left: 27em;    
+    }
+    .search__icones {
+        display: flex;
+        gap: 30px;
+        margin-left: 65%;
+        margin-top: -2.5em;
+    }
+}

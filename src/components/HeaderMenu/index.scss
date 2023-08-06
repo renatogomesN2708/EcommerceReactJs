@@ -1,0 +1,36 @@
+@use '../../Sass/_Variables.scss' as *;
+
+.headerMenu {
+    display: grid;
+    grid-auto-flow: column;
+    ul {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 80px;
+        margin: -85px 300px ;
+        width: 116px;
+        height: 23px;
+        flex-shrink: 0;
+        list-style: none;
+        font-size: 22px;
+
+    }
+    h2 {
+        margin-left: 40em;
+        margin-top: -90px;
+        color: #000;
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    img {
+        width: 33px;
+        height: 33px;
+        flex-shrink: 0;
+        margin-top: -95px;
+        margin-right: 100px;
+
+    }
+}

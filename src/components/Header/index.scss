@@ -1,0 +1,12 @@
+@use '../../Sass/_Variables.scss' as *;
+
+
+.header {
+        font-family: $family;
+
+    header {
+        padding: 50px;
+        background-color: $header-background;
+    }
+
+}
