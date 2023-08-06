@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+import './index.scss'
 
-export default class Pay extends Component {
+
+export default class Car extends Component {
   render() {
     return (
       <div>Pay</div>
