@@ -1,1 +1,63 @@
 @use '../../Sass/_Variables.scss' as *;
+
+
+.home__card {
+        
+        width: 250px;
+        height: 280px;
+        margin: 10px -120px -10px 0px;
+        margin-top: 3em;
+        flex-shrink: 0;
+        float: left;
+        display: grid;
+        margin-left: 22em;
+        border-radius: 8px;
+        border: 1px solid #B7B7B7;
+        background: var(--primitive-white, #FFF);
+    
+    section {
+        justify-content: space-between;
+        
+        display: flex;
+        width: 250px;
+        float: left;
+        height: 337px;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    img {
+        width: 250px;
+    }
+    a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    button {
+        width: 128px;
+        height: 24px;
+        flex-shrink: 0;
+        background-color: #0C70F2;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    button:hover {
+        background-color: $background-hover;
+        
+    }
+    
+}
+.home__card-description {
+    align-items: center;
+    text-align: center;
+    margin-top: -125px;
+    p {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+}

@@ -1,6 +1,7 @@
 import Header from '../Header/Header'
 import './index.scss'
 import Car from "../../assets/Car.png"
+import { Link } from 'react-router-dom'
 
 const HeaderMenu = () => {
   return (
@@ -8,7 +9,7 @@ const HeaderMenu = () => {
       <Header />
       <div className='headerMenu'>
         <ul>
-          <li>Home</li>
+          <li><Link to={`/home`}>Home</Link></li>
           <li>Novidades</li>
           <li>Feminino</li>
           <li>Masculino</li>

@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import Home from './View/Home/Home';
 import Login from './View/Login/Login';
+import Home from './View/Home/Home';
 import Products from './View/Products/Products';
 import Car from './View/Car/Car';
 import { PRODUCTS_MOCK } from "./mock/Products.mock"
@@ -18,12 +18,12 @@ const router = createBrowserRouter([
     element: <Home data={PRODUCTS_MOCK} />,
   },
 {
-    path: "/pay",
-    element: <Car />,
+  path: "/products/:productId",
+  element: <Products data={PRODUCTS_MOCK} /> 
   },
 {
-    path: "/products",
-    element: <Products />,
+    path: "/car/:carId",
+    element: <Car data={PRODUCTS_MOCK} />,
   },
 
 ]);

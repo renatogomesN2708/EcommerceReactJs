@@ -1,9 +1,19 @@
-import './index.scss'
+import './index.scss';
+import { Link } from 'react-router-dom';
 
-const ProductsCard = () => {
+const ProductsCard = ({data}) => {
   return (
-    <div>ProductsCard</div>
-  )
-}
+    <div className='home__card'>
+      <section><img src={data.imgPath} alt="model1" /></section>
+      < div className='home__card-description'>
+        <p>{data.title}</p>
+        <button>
+          <Link to={`/products/${data.id}`}>Comprar
+          Look</Link>
+        </button>
+      </div>
+    </div>
+  );
+};
 
-export default ProductsCard
+export default ProductsCard;

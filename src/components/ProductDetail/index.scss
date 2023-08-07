@@ -1,0 +1,119 @@
+@use '../../Sass/_Variables.scss' as *;
+
+.product-detail {
+    .product-detail__left-side {
+
+            .product-detail__card {
+                margin-left: 20em;
+                margin-top: 13em;
+                border: 0.5 solid grey;
+
+    
+                img {
+                    border-radius: 15px;
+                }
+            }
+            .product-detail__description {
+                margin-right: 60em;
+                margin-top: 20em;
+                text-align: center;
+            }
+            p {
+                margin-top: 15px;
+                margin-left: 20px;
+            }
+            .ptitle {
+                margin-right: 3em;
+
+            }
+
+            h1 {
+                text-align: left;
+                margin-left: 10em;
+                margin-top: -8em;
+            }
+
+            .product-detail__borderDescrip {
+                border: 0.5px solid rgb(173, 173, 173);
+                width: 50%;
+                margin-top: 20px;
+                margin-left: 15em;
+            }
+
+
+
+
+
+    }
+ 
+    .product-detail__right-side {
+        text-align: center;
+        margin-top: -34em;
+        margin-left: 7em;
+
+        p {
+            margin-top: 2em;
+            margin-left: 31em;
+            margin-bottom: -0.5em;
+            color: #000;
+            text-align: center;
+            text-align: left;
+            text-shadow: 0px 4px 4px rgba(203, 203, 203, 0.25);
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        h1 {
+            color: #000;
+            text-align: center;
+            text-shadow: 0px 4px 4px rgba(203, 203, 203, 0.25);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 2em;
+            margin-left: 12em;
+            margin-bottom: 20px;
+        }
+        .product-detail__border {
+            border-bottom: 0.5px solid rgb(173, 173, 173);
+            width: 35%;
+            margin-left: 50em;
+        }
+        .product-detail__cube-colors {
+            display: flex;
+            gap: 10px;
+            margin-left: 49em;
+            margin-top: 2.5em;  
+            margin-bottom: -25px;  
+        }
+        
+
+    }
+    .product-detail__sizes {
+        margin-top: 3em;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+    button {
+        width: 638px;
+        height: 46.459px;
+        color: $white-link;
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        background-color: $button-color;
+        margin-top: 3em;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.30);
+        margin-left: 14em;
+}
+button:hover {
+    background-color: $background-hover;
+}
+}
