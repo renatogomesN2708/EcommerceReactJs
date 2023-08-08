@@ -51,7 +51,7 @@ export const PRODUCTS_MOCK = [
         title: "Camisa Manga Longa Bege | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
-        sizes: ["P", "M"],z
+        sizes: ["P", "M"],
     },
 ];
 
