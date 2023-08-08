@@ -30,26 +30,6 @@
     img {
         width: 250px;
     }
-    a {
-        color: #FFF;
-        text-decoration: none;
-    }
-    button {
-        width: 128px;
-        height: 24px;
-        flex-shrink: 0;
-        background-color: #0C70F2;
-        text-align: center;
-        font-family: Raleway;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
-    }
-    button:hover {
-        background-color: $background-hover;
-        
-    }
     
 }
 .home__card-description {
@@ -59,5 +39,31 @@
     p {
         margin-bottom: 10px;
         font-size: 13px;
+    }
+    .home__card-button {
+
+
+        
+        button {
+            width: 128px;
+            height: 24px;
+            flex-shrink: 0;
+            background-color: $button-color;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            border-radius: 10px;
+            border: 0.5px solid grey;
+            color: white;
+        }
+        button:hover {
+            background-color: $background-hover;
+            border: none;
+            transform: translateY(-5px);
+            transition-duration: 0.5s;
+            
+        }
     }
 }

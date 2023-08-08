@@ -17,8 +17,9 @@
         height: 48px;
         flex-shrink: 0;
         border-radius: 10px;
+        padding-left: 2.5em;
 
-        color: rgba(0, 0, 0, 0.40);
+        color: black;
         font-family: Raleway;
         font-size: 20px;
         font-style: normal;
@@ -30,18 +31,19 @@
 
         
     }
-    input::placeholder {
-        padding-left: 4em;
-    }
+    
     .search__img {
         position: absolute;
         top: 30%;
-        left: 27em;    
+        left: 24em;    
     }
     .search__icones {
         display: flex;
         gap: 30px;
-        margin-left: 65%;
+        margin-left: 67%;
         margin-top: -2.5em;
+    }
+    .coracao:hover {
+        background-color: red;
     }
 }

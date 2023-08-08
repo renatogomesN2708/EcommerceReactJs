@@ -1,26 +1,28 @@
 import React, { Component } from 'react'
 import './index.scss'
-import HeaderMenu from '../../components/HeaderMenu/HeaderMenu'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import Header from '../../components/Header/Header'
 
 
-export default class Car extends Component {
-  render() {
-    return (
-      <div>
-        <HeaderMenu/>
+const Car = ({ data }) => {
+  const { carId } = useParams();
+  const selectedProduct = data.find((product) => product.id == 
+  carId)
+  return (
+    <div>
+        <Header/>
         <div className='car-detail'>
           <div className='car-detail__left-side'>
             <form className='car-detail__form'>
               <div className='car-detail__input-wrapper'>
-                <label htmlFor='name'>Nome:</label>
+                <label className='labelOne' htmlFor='name'>Nome:</label>
                 <input 
                   type="text"
                   placeholder='Nome completo'
                   id='name'
                   className='car-detail__input-name'
                   />
-                  <label htmlFor="entrega">Endereço de entrega
+                  <label className='labelOne' htmlFor="entrega">Endereço de entrega
                   </label>
                   <input 
                     type="text"
@@ -32,37 +34,44 @@ export default class Car extends Component {
                 <h2>Forma de pagamento:</h2>
                 <div className='car-detail__pix'>
                   <input type="checkbox" id='pix' name='format' />
-                  <label htmlFor="pix">Pix</label>
+                  <label id='labelPix' htmlFor="pix">Pix</label>
                 </div>
                 <div className='car-detail__boleto'>
                   <input type="checkbox" id='boleto' name='format' />
+                  <label id='labelBoleto' htmlFor="Boleto">Boleto</label>
                 </div>
-                <div className='car-detail__crcedit-card'>
+                <div className='car-detail__credit-card'>
                   <input type="checkbox" id='credit-card' name='format' />
-                  <label htmlFor="credit-card">Cartão de crédito</label>
+                  <label id='labelCredit' htmlFor="credit-card">Cartão de crédito</label>
                 </div>
               </div>
-              
-              <button>
-                <Link to={`/home`}>Enviar Pedido</Link>
-              </button>
+             <div className='car-detail__button'>
+               <Link to={`/home`}>
+                 <button>
+                   Enviar Pedido
+                 </button>
+               </Link>
+             </div>
             </form>
           </div>
           <div className='car-detail__right-side'>
-            <h1>Resumo do pedido:</h1>
+            <pre className='h1Principal' >Resumo do pedido:</pre>
             <div className='car-detail__product-price'>
-              <div className='car-detail__description'>Produtos (1)
-              :</div>
-              <h1>{selectedProduct.price}</h1>
+              <div className='car-detail__description'><p className='produto'>Produtos (1):</p>
+               </div>
+              <h1 className='priceCima'>{selectedProduct.price}</h1>
             </div>
+            <div className='car-detail__border-line'></div>
             <div className='car-detail__product-total'>
               <div className='car-detail__description'>
-                <h1>{selectedProduct.price}</h1>
+                <p className='total'>Total</p>
+                <h1 className='priceBaixo'>{selectedProduct.price}</h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-    )
-  }
+  )
 }
+
+export default Car

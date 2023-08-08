@@ -7,10 +7,12 @@ const ProductsCard = ({data}) => {
       <section><img src={data.imgPath} alt="model1" /></section>
       < div className='home__card-description'>
         <p>{data.title}</p>
-        <button>
-          <Link to={`/products/${data.id}`}>Comprar
-          Look</Link>
-        </button>
+        <div className='home__card-button'>
+        <Link to={`/products/${data.id}`}><button>
+            Comprar
+            Look
+          </button></Link>
+        </div>
       </div>
     </div>
   );

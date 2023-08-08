@@ -1,1 +1,233 @@
 @use '../../Sass/_Variables.scss' as *;
+
+
+.car-detail {
+    //Alinhando os itens lado a lado pra depois colocar os itens em grid em seus container.
+    display: flex;
+    text-align: center;
+    margin-left: 7em;
+    margin-top: 8em;
+    align-items: center;
+}
+
+
+.car-detail__left-side {
+    //afastando a coluna para a esquerda
+        margin-left: 8em;
+
+        .car-detail__form {
+            //Deixando a sessão da esquerda mais alta que a direita.
+            display: grid;
+            margin-top: -1em; 
+        }
+
+.car-detail__input-wrapper {
+            //coloando os input em linhas assim como os label.
+            display: grid; 
+            text-align: left;
+            gap: 8px;
+
+            .labelOne {
+                margin: 0px 0px 5px;
+                color: #323232;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            input {
+                display: flex;
+                width: 524px;
+                height: 30px;
+                padding: 11px 13px;
+                align-items: center;
+                flex-shrink: 0;
+                margin: 0px 0px 15px;
+                border-radius: 10px;
+                border: 2px solid #7A7A7A;
+                background: rgba(255, 255, 255, 0.90);
+            }
+        }
+        
+}
+        
+.car-detail__format {
+            
+            h2 {
+                color: #323232;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-align: left;
+                margin-top: 50px;
+            }
+.car-detail__pix {
+                margin-top: 2em;
+                margin-right: 35em;
+
+                #pix {
+                    display: flex;
+                    width: 25px;
+                    height: 25px;
+
+                }
+                #labelPix {
+                    display: flex;
+                    margin-top: -20px;
+                    padding-left: 35px;
+                    
+                }
+                input {
+                    width: 25px;
+                    height: 25px;
+                    padding: 11px 13px;
+                    align-items: center;
+                }
+            }
+        }
+
+.car-detail__boleto {
+                margin-right: 35em;
+
+                #boleto {
+                    display: flex;
+                    width: 25px;
+                    height: 25px;
+                    margin-top: 15px;
+                }
+                #labelBoleto {
+                    display: flex;
+                    margin-left: 35px;
+                    margin-top: -20px;
+                }
+        }
+
+.car-detail__credit-card {
+            margin-top: 5em;
+            margin-right: 35em;
+
+            #credit-card {
+                display: flex;
+                width: 25px;
+                height: 25px;
+                margin-top: -65px;
+            }
+            #labelCredit {
+                display: flex;
+                margin-left: 35px;
+                margin-top: -20px;
+                margin-bottom: 50px;
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+                
+        }
+.car-detail__button {
+   
+        button {
+            display: flex;
+            width: 524px;
+            height: 48px;
+            padding: 20px 36px;
+            justify-content: center;
+            align-items: center;
+            background-color: $button-color;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: $background-hover;
+            border: none;
+            transform: translateY(-5px);
+            transition-duration: 0.5s;
+            text-transform: uppercase;
+        }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+
+
+.car-detail__right-side {
+            margin-left: 10em;
+            margin-top: -13em;
+            width: 572px;
+            height: 350px;
+            border-right: 1px solid rgb(214, 214, 214) ;
+            border-left: 1px solid rgb(214, 214, 214);
+            box-shadow: 0px 5px 0px rgb(206, 206, 206) ;
+            background-color: rgba(212, 205, 205, 0.2);
+
+
+            .h1Principal {
+                text-align: left;
+                margin-left: 2em;
+                margin-top: 1.5em;
+                color: #000;
+                font-size: 30px;
+                font-weight: bold;
+                
+            }
+
+            .car-detail__border-line {
+                border: 0.5px solid #D9D9D9;;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                margin-left: 4em;
+                width: 80%;
+            }
+            .car-detail__description {
+                display: flex;
+                margin-left: 2.4em;
+                margin-top: 2.5em;
+                text-align: left;
+                color: #000;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .produto {
+                display: flex;
+                color: #000;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .priceCima {
+                display: flex;
+                margin-left: 13em;
+                color: #000;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+                
+            }
+            .priceBaixo {
+                display: flex;
+                margin-left: 9em;
+                color: #000;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 20px;
+            }
+            .total {
+                color: #000;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+ }

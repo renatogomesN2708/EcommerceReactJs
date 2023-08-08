@@ -12,7 +12,7 @@ const ProductDetail = ({data}) => {
             </div>
             <div className='product-detail__description'>
                 <h1>Descrição</h1>
-                <p className='ptitle'>{data.title}</p>
+                <p id='pDescript'>{data.title}</p>
                 <div className='product-detail__borderDescrip'></div>
             </div>
         </div>
@@ -67,9 +67,11 @@ const ProductDetail = ({data}) => {
                     </span>
                 ))}
             </div>
-            <button>
-                <Link to={`/car/${data.id}`}>Finalizar Compra</Link>
-            </button>
+            <div className='product-detail__button'>
+            <Link to={`/car/${data.id}`}><button>
+                    Finalizar Compra
+                </button></Link>
+            </div>
         </div>
     </div>
   );

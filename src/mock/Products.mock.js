@@ -54,3 +54,4 @@ export const PRODUCTS_MOCK = [
         sizes: ["P", "M"],
     },
 ];
+

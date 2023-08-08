@@ -4,27 +4,27 @@
     .product-detail__left-side {
 
             .product-detail__card {
-                margin-left: 20em;
+                margin-left: -60em;
                 margin-top: 13em;
+                text-align: center;
                 border: 0.5 solid grey;
-
+                
     
                 img {
                     border-radius: 15px;
+                    width: 370px;
+                    margin-left: 3.5em;
                 }
+                
             }
             .product-detail__description {
                 margin-right: 60em;
                 margin-top: 20em;
-                text-align: center;
+                text-align: left;
             }
-            p {
+            #pDescript {
                 margin-top: 15px;
-                margin-left: 20px;
-            }
-            .ptitle {
-                margin-right: 3em;
-
+                margin-left: 20em;
             }
 
             h1 {
@@ -36,8 +36,9 @@
             .product-detail__borderDescrip {
                 border: 0.5px solid rgb(173, 173, 173);
                 width: 50%;
-                margin-top: 20px;
-                margin-left: 15em;
+                margin-top: 1em;
+                margin-bottom: 5em;
+                margin-left: 20em;
             }
 
 
@@ -48,8 +49,8 @@
  
     .product-detail__right-side {
         text-align: center;
-        margin-top: -34em;
-        margin-left: 7em;
+        margin-top: -38em;
+        margin-left: 10em;
 
         p {
             margin-top: 2em;
@@ -80,40 +81,47 @@
             border-bottom: 0.5px solid rgb(173, 173, 173);
             width: 35%;
             margin-left: 50em;
+            
         }
         .product-detail__cube-colors {
             display: flex;
             gap: 10px;
-            margin-left: 49em;
+            margin-left: 48.5em;
             margin-top: 2.5em;  
             margin-bottom: -25px;  
+        }
+
+        .product-detail__button {
+
+           
+            button {
+                width: 638px;
+                height: 46.459px;
+                color: $white-link;
+                text-align: center;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                background-color: $button-color;
+                margin-top: 5em;
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.30);
+                margin-left: 16em;
+                margin-bottom: 5em;
+                color: white;
+        }
+        button:hover {
+            background-color: $background-hover;
+        }
+
         }
         
 
     }
     .product-detail__sizes {
+        position: absolute;
         margin-top: 3em;
+        margin-left: 48em;
     }
-    a {
-        text-decoration: none;
-        color: $white;
-    }
-    button {
-        width: 638px;
-        height: 46.459px;
-        color: $white-link;
-        text-align: center;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
-        background-color: $button-color;
-        margin-top: 3em;
-        border-radius: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.30);
-        margin-left: 14em;
-}
-button:hover {
-    background-color: $background-hover;
-}
 }

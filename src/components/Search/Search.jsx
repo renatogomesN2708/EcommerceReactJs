@@ -11,7 +11,7 @@ const Search = () => {
       </div>
       <section className='search__icones'>
         <img src={Person} alt="" />
-        <img src={Coracao} alt="" />
+        <img className='coracao' src={Coracao} alt="" />
       </section>
 
     </div>
