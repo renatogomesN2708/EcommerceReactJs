@@ -2,7 +2,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 1,
         imgPath:"Look1.png",
-        imgPathdDetail: "../../../public/Look1.png",
+        imgPathdDetail: "../../public/Look1.png",
         title: "Cropped manga curta branco | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
@@ -11,7 +11,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 2,
         imgPath:"Look2.png",
-        imgPathdDetail: "../../../public/Look2.png",
+        imgPathdDetail: "../../public/Look2.png",
         title: "Blazer Preto | by DNC",
         price: "R$ 139.90",
         colors: ["black", "red"],
@@ -20,7 +20,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 3,
         imgPath:"Look3.png",
-        imgPathdDetail: "../../../public/Look3.png",
+        imgPathdDetail: "../../public/Look3.png",
         title: "Blazer Marrom | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
@@ -29,7 +29,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 4,
         imgPath:"Look4.png",
-        imgPathdDetail: "../../../public/Look4.png",
+        imgPathdDetail: "../../public/Look4.png",
         title: "Cropped Manga Preta | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
@@ -38,7 +38,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 5,
         imgPath:"Look5.png",
-        imgPathdDetail: "../../../public/Look5.png",
+        imgPathdDetail: "../../public/Look5.png",
         title: "Camisa Bege Masculina | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
@@ -47,7 +47,7 @@ export const PRODUCTS_MOCK = [
     {
         id: 6,
         imgPath:"Look6.png",
-        imgPathdDetail: "../../../public/Look6.png",
+        imgPathdDetail: "../../public/Look6.png",
         title: "Camisa Manga Longa Bege | by DNC",
         price: "R$ 139.90",
         colors: ["black"],
